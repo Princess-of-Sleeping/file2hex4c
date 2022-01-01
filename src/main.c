@@ -4,6 +4,7 @@
  */
 
 #include <stddef.h>
+#include <stdint.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -17,7 +18,7 @@ typedef struct HexDumpParam {
 
 #define BUFFER_SIZE (0x4000)
 
-char working_buffer[BUFFER_SIZE];
+uint8_t working_buffer[BUFFER_SIZE];
 
 const char *find_item(int argc, char *argv[], const char *name){
 
